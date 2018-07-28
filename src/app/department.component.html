@@ -1,0 +1,9 @@
+<h5>Department list</h5>
+<hr>
+
+<ul class="list-group">
+<li class="list-group-item" *ngFor="let department of departments;">
+        {{department.id}}
+    <a href="#" (click)="departmentClick(department.studentId);false" >{{department.name}}</a>
+</li>
+</ul>

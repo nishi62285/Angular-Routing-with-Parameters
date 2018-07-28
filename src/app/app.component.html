@@ -1,0 +1,15 @@
+<h3>Welcome to Angular2 Router Application</h3>
+
+<nav class="navbar navbar-default">
+    <ul class="nav navbar-nav">
+        <li class="active">
+            <a href='#' routerLink='departments' routerLinkActive='active'>Departments</a>
+        </li>
+        <li>
+            <a href='#' [routerLink]="['students',2]" routerLinkActive='active'>Students</a>
+        </li>
+    </ul>
+</nav>
+
+<!--This is the placeholder where the content is rendered-->
+<router-outlet></router-outlet>
